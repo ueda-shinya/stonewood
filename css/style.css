@@ -2,10 +2,11 @@
 
 /* リーリース時には消すこと!!! */
 * {
-  outline: 1px rgba(255, 0, 0, 0.8) solid;
+  /* outline: 1px rgba(255, 0, 0, 0.8) solid; */
 }
 /* 変数の定義 */
 :root {
+  --max-width: 1440px;
   --max-content-width: 900px;
   --min-content-width: 375px;
 }
@@ -54,6 +55,9 @@
 
 html {
   /* コンテンツ幅でのフォントサイズ */
+  max-width: var(--max-width);
+  scroll-behavior: smooth;
+  margin: 0 auto;
   font-size: clamp(1px, 1.6vw, 16px);
   font-family: 'Zen Old Mincho', serif;
 }
@@ -157,7 +161,7 @@ header {
   justify-content: space-between;
 }
 .header_logo__img {
-  margin-top: 7px;
+  margin-top: 3px;
   width: 284px;
   height: 44px;
 }
@@ -223,12 +227,18 @@ header {
 
 /* *********************************************** */
 /* contents1 */
+#campaing_jp_point {
+  margin-top: -55px;
+  padding-top: 55px;
+}
+
 #contents1 {
+  z-index: 100;
   width: 100%;
   height: 650px;
+  padding-top: 15px;
   background-image: url(../images/kabegami1.webp);
   background-size: cover;
-  padding-top: 15px;
 }
 .contents1_title {
   width: 806px;
@@ -307,6 +317,10 @@ header {
 
 /* *********************************************** */
 /* about */
+#about_jp_point {
+  margin-top: -55px;
+  padding-top: 55px;
+}
 #about {
   width: 100%;
   height: 379px;
@@ -345,6 +359,10 @@ header {
 
 /* *********************************************** */
 /* product */
+#product_jp_point {
+  margin-top: -55px;
+  padding-top: 55px;
+}
 #product {
   width: 100%;
   height: 1210px;
@@ -416,6 +434,20 @@ header {
   height: 35px;
   margin: 23px auto 0;
 }
+.instview a {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 33px;
+  margin-left: 370px;
+  align-items: start;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 0.81;
+}
+.inatview__img {
+  width: 36px;
+  height: 25px;
+}
 .ins_cards {
   display: flex;
   width: 900px;
@@ -430,25 +462,15 @@ header {
 .inst_card {
   width: 280px;
 }
+.inst_card .inst_card__a {
+  display: block;
+  margin: 0;
+}
 
 .inst_card__img {
   display: block;
   width: 280px;
   height: 250px;
-}
-.instview a {
-  display: inline-flex;
-  width: fit-content;
-  margin-top: 33px;
-  margin-left: 370px;
-  align-items: start;
-  font-weight: 900;
-  font-size: 22px;
-  line-height: 0.81;
-}
-.inatview__img {
-  width: 36px;
-  height: 25px;
 }
 
 .banner {
@@ -477,6 +499,7 @@ header {
   height: 123px;
 
   animation-name: kira1;
+  opacity: 0;
   animation-duration: 8s;
   animation-timing-function: ease-in;
   animation-delay: 1s;
@@ -487,12 +510,9 @@ header {
 }
 @keyframes kira1 {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   90% {
-    opacity: 1;
-  }
-  95% {
     opacity: 0;
   }
   100% {
@@ -505,8 +525,9 @@ header {
   left: 765px;
   width: 117px;
   height: 115px;
-  
+
   animation-name: kira1;
+  opacity: 0;
   animation-duration: 8s;
   animation-timing-function: ease-in;
   animation-delay: 5s;
@@ -521,8 +542,9 @@ header {
   left: 555px;
   width: 60px;
   height: 50px;
-  
+
   animation-name: kira1;
+  opacity: 0;
   animation-duration: 8s;
   animation-timing-function: ease-in;
   animation-delay: 9s;
@@ -537,8 +559,9 @@ header {
   left: 307px;
   width: 58px;
   height: 46px;
-  
+
   animation-name: kira1;
+  opacity: 0;
   animation-duration: 8s;
   animation-timing-function: ease-in;
   animation-delay: 13s;
@@ -554,15 +577,159 @@ header {
 
 /* *********************************************** */
 /* footer */
-footer{
-width: 100%;
-height: 416px;
-background-color: #5c4c47;
+footer {
+  width: 100%;
+  height: 416px;
+  padding-top: 114px;
+  background-color: #5c4c47;
+  color: white;
+}
+.footer_box {
+  display: flex;
+  width: 856px;
+  margin: 0 8px 0 auto;
+}
+.logo_circle {
+  width: 152px;
+  height: 148px;
+}
+.logo_circle__img {
+  width: 152px;
+  height: 148px;
+}
+.footer_nav {
+  width: 223px;
+  margin-left: 75px;
+  font-size: 16px;
+  line-height: 1.448;
+}
+.footer__nav__li:first-child {
+  margin-top: 20px;
+}
+.footer__nav__li:nth-child(2) {
+  margin-top: 8px;
+}
+.footer__nav__li:nth-child(3) {
+  margin-top: 8px;
+}
+.footer__nav__li:nth-child(4) {
+  margin-top: 12px;
+}
+.footer__nav__li:last-child {
+  margin-top: 0;
 }
 
+.footer_info {
+  width: 216px;
+}
+.footer_info_customer p {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.footer_info_customer a {
+  font-size: 14px;
+  line-height: 1.45;
+  text-decoration: underline;
+}
+.footer_info_address p:first-child {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+.footer_info_address p:last-child {
+  font-size: 12px;
+  line-height: 1.1;
+}
 
+.sns {
+  width: 190px;
+  font-size: 16px;
+  line-height: 1.44;
+  text-align: center;
+}
+.sns p {
+  display: block;
+  width: 100%;
+}
+.sns_img {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  justify-content: space-between;
+}
 
+.sns__img:first-child {
+  width: 44px;
+  height: 44px;
+}
+.sns__img:not(:first-child) {
+  width: 40px;
+  height: 40px;
+}
+.footer_note {
+  display: flex;
+  width: fit-content;
+  margin: 55px 12px 0 auto;
+}
+.footer_note_sopt__img {
+  width: 36px;
+  height: 50px;
+}
+.footer_note__p {
+  display: contents;
+  display: flex;
+  margin-left: 8px;
+  width: 322px;
+  font-size: 11px;
+  line-height: 1.21;
+}
 
+.footer_note__img {
+  width: 36px;
+  height: 36px;
+}
+
+.topmove_btn__p {
+  display: block;
+  height: 0;
+}
+.topmove_btn {
+  position: relative;
+  width: 82px;
+  height: 82px;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  bottom: 70px;
+  left: 1050px;
+}
+.topmove_btn::before {
+  position: relative;
+  content: ' ';
+  display: block;
+  width: 9px;
+  height: 30px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  transform: rotate(0.125turn);
+  top: 24px;
+  left: 29px;
+}
+
+.topmove_btn::after {
+  position: relative;
+  content: ' ';
+  display: block;
+  width: 9px;
+  height: 30px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  transform: rotate(-0.125turn);
+  top: -6px;
+  left: 45px;
+}
+.topmove_btn:hover {
+  background-color: #f7881d;
+}
 
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
@@ -584,4 +751,32 @@ background-color: #5c4c47;
 
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
+}
+
+/*==================================================
+じわっ
+===================================*/
+
+.blur {
+  animation-name: blurAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blurAnime {
+  from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+  }
+
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.blurTrigger {
+  opacity: 0;
 }
