@@ -140,6 +140,8 @@ button:hover {
   font-size: 1.75rem;
   line-height: 1.448;
   cursor: pointer;
+  color: black;
+  font-weight: 900;
 }
 
 /* 年齢確認ポップアップ */
@@ -155,7 +157,7 @@ header {
   width: 100%;
   height: clamp( 1px, 6.0vw, 54px);
   position: sticky;
-  z-index: 9999;
+  z-index: 9990;
   top: 0;
   background-color: #5c4c47;
   justify-content: space-between;
