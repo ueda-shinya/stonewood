@@ -152,6 +152,49 @@ button:hover {
 /* 年齢確認ポップアップ */
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
+  #popup {
+    width: 80%;
+    height:clamp(360px, 96vw, 864px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: clamp(1px, 2.78vw, 25px);
+    padding-top: clamp(120px, 32vw, 288px);
+    text-align: center;
+  }
+  #popup h2 {
+    position: absolute;
+    width: 100%;
+    height: clamp(1px, 12.56vw, 113px);
+    left: clamp(1px, 1.78vw, 16px);
+    top: clamp(1px, 8.78vw, 79px);
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.464;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #popup button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: white;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: clamp(1px, 3.33vw, 30px);
+    font-size: 3.3rem;
+    line-height: 1.448;
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+  }
+
+
 }
 
 /* *********************************************** */
@@ -262,8 +305,8 @@ header {
     position: fixed;
     top: 0;
     right: -100vw;
-    width: clamp( 246px, 65.6vw, 590px);
-    height: clamp( 405px, 108vw, 972px);
+    width: clamp(246px, 65.6vw, 590px);
+    height: clamp(405px, 108vw, 972px);
     transition: right 0.5s;
     overflow-y: auto;
     background-color: white;
@@ -275,35 +318,34 @@ header {
   }
   .nav_menu__ul {
     display: block;
-    padding-top: clamp( 10px, 2.67vw, 24px);
+    padding-top: clamp(10px, 2.67vw, 24px);
   }
   .nav_menu__li {
     display: block;
-    width: clamp( 219px, 58.4vw, 526px);
-    height: clamp( 60px, 16vw, 144px);
+    width: clamp(219px, 58.4vw, 526px);
+    height: clamp(60px, 16vw, 144px);
     font-family: 'Zen Old Mincho';
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 1.45;
     background-color: #dfc9b4;
     color: black;
-    margin-left: clamp( 9px, 2.4vw, 22px);
+    margin-left: clamp(9px, 2.4vw, 22px);
     text-align: center;
-    padding-top: clamp( 10px, 2.67vw, 24px);
+    padding-top: clamp(10px, 2.67vw, 24px);
   }
   .nav_menu__li:nth-child(2) {
-    margin-top: clamp( 10px, 2.67vw, 24px);
+    margin-top: clamp(10px, 2.67vw, 24px);
   }
   .nav_menu__li:nth-child(3) {
-    margin-top: clamp( 16px, 4.27vw, 38px);
+    margin-top: clamp(16px, 4.27vw, 38px);
   }
   .nav_menu__li:nth-child(4) {
-    margin-top: clamp( 12px, 3.2vw, 29px);
+    margin-top: clamp(12px, 3.2vw, 29px);
   }
   .nav_menu__li:nth-child(5) {
-    margin-top: clamp( 22px, 5.87vw, 53px);
+    margin-top: clamp(22px, 5.87vw, 53px);
   }
-
 }
 
 /* *********************************************** */
@@ -341,22 +383,22 @@ header {
 @media screen and (max-width: 767px) {
   #keyvisual {
     width: 100%;
-    height: clamp( 419px, 111.73vw, 1006px);
+    height: clamp(419px, 111.73vw, 1006px);
   }
   .keyvisual__img {
     width: 100%;
-    height: clamp( 419px, 111.73vw, 1006px);
+    height: clamp(419px, 111.73vw, 1006px);
     box-shadow: none;
   }
   .kv_logo {
     bottom: unset;
     right: unset;
-    top: clamp( 142px, 37.87vw, 341px);
+    top: clamp(142px, 37.87vw, 341px);
     left: 70px;
   }
   .kv_logo__img {
-    width: clamp( 247px, 65.87vw, 593px);
-    height: clamp( 135px, 36vw, 324px);
+    width: clamp(247px, 65.87vw, 593px);
+    height: clamp(135px, 36vw, 324px);
   }
 }
 
@@ -451,18 +493,18 @@ header {
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
   #contents1 {
-    height: clamp( 760px, 202.67vw, 1824px);
-    padding-top: clamp( 32px, 8.53vw, 77px);
+    height: clamp(760px, 202.67vw, 1824px);
+    padding-top: clamp(32px, 8.53vw, 77px);
     background-image: url(../images/c1-bg-sp.webp);
   }
   .contents1_title {
-    width: clamp( 323px, 86.13vw, 775px);
-    height: clamp( 164px, 43.73vw, 394px);
-    margin-left: clamp( 25px, 6.67vw, 60px);
+    width: clamp(323px, 86.13vw, 775px);
+    height: clamp(164px, 43.73vw, 394px);
+    margin-left: clamp(25px, 6.67vw, 60px);
   }
   .contents1_title__img {
-    width: clamp( 323px, 86.13vw, 775px);
-    height: clamp( 164px, 43.73vw, 394px);
+    width: clamp(323px, 86.13vw, 775px);
+    height: clamp(164px, 43.73vw, 394px);
   }
   .contents1_cards {
     display: flex;
@@ -478,24 +520,24 @@ header {
     margin: 0;
   }
   .c1_card_img {
-    width: clamp( 246px, 65.6vw, 590px);
-    height: clamp( 230px, 61.33vw, 552px);
-    margin-top: clamp( 14px, 3.73vw, 34px);
-    margin-left: clamp( 66px, 17.6vw, 158px);
+    width: clamp(246px, 65.6vw, 590px);
+    height: clamp(230px, 61.33vw, 552px);
+    margin-top: clamp(14px, 3.73vw, 34px);
+    margin-left: clamp(66px, 17.6vw, 158px);
   }
   .contents1_card__img {
-    width: clamp( 246px, 65.6vw, 590px);
-    height: clamp( 230px, 61.33vw, 552px);
+    width: clamp(246px, 65.6vw, 590px);
+    height: clamp(230px, 61.33vw, 552px);
   }
   .c1_card_text h3 {
-    margin-top: clamp( 28px, 7.47vw, 67px);
+    margin-top: clamp(28px, 7.47vw, 67px);
     font-size: 2.4rem;
     line-height: 1;
     letter-spacing: 0em;
     text-align: center;
   }
   .c1_card_text h4 {
-    margin-top: clamp( 12px, 3.2vw, 29px);
+    margin-top: clamp(12px, 3.2vw, 29px);
     padding-top: 0;
     font-size: 2.4rem;
     font-weight: 400;
@@ -504,20 +546,20 @@ header {
 
   .c1_card_text .note__p {
     padding-top: 0;
-    font-size: 2..1rem;
+    font-size: 2.1rem;
     line-height: 1;
     letter-spacing: 0em;
   }
 
   .c1_card_text .price__p {
-    padding-top: clamp( 10px, 2.67vw, 24px);
-    padding-bottom: clamp( 30px, 8vw, 72px);
+    padding-top: clamp(10px, 2.67vw, 24px);
+    padding-bottom: clamp(30px, 8vw, 72px);
     font-size: 2.4rem;
     line-height: 1;
   }
   .c1_card_text button {
-    width: clamp( 218px, 58.13vw, 523px);
-    height: clamp( 42px, 11.2vw, 101px);
+    width: clamp(218px, 58.13vw, 523px);
+    height: clamp(42px, 11.2vw, 101px);
     font-size: 2.4rem;
     line-height: 1;
   }
@@ -564,21 +606,21 @@ header {
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
   #about {
-    height: clamp( 431px, 114.93vw, 1034px);
-    padding-top: clamp( 18px, 4.8vw, 43px);
+    height: clamp(431px, 114.93vw, 1034px);
+    padding-top: clamp(18px, 4.8vw, 43px);
   }
   .about_title__img {
     display: block;
-    width: clamp( 179px, 47.73vw, 430px);
-    height: clamp( 40px, 10.67vw, 96px);
+    width: clamp(179px, 47.73vw, 430px);
+    height: clamp(40px, 10.67vw, 96px);
     margin: 0 auto;
   }
   .about_text {
     display: block;
-    width: clamp( 325px, 86.67vw, 780px);
-    height: clamp( 330px, 88vw, 792px);
+    width: clamp(325px, 86.67vw, 780px);
+    height: clamp(330px, 88vw, 792px);
     margin: 0 auto;
-    padding-top: clamp( 72px, 19.2vw, 173px);
+    padding-top: clamp(72px, 19.2vw, 173px);
     background-image: url('../images/waku3-sp.webp');
     background-size: cover;
   }
@@ -600,7 +642,6 @@ header {
 #product {
   width: 100%;
   height: clamp(1px, 134.44vw, 1210px);
-  padding-top: clamp(1px, 6.78vw, 61px);
   background-image: url('../images/c3-bg-pc.webp');
   background-size: clamp(1px, 160vw, 1440px) clamp(1px, 134.44vw, 1210px);
   background-repeat: no-repeat;
@@ -610,7 +651,7 @@ header {
 .product__h2 {
   display: block;
   width: fit-content;
-  margin: 0 auto;
+  margin: clamp(1px, 6.22vm, 56px) auto 0;
 }
 .product_title__img {
   width: clamp(292px, 32.44vw, 292px);
@@ -652,8 +693,7 @@ header {
   width: clamp(1px, 43.44vw, 391px);
   height: fit-content;
   margin: 0 auto;
-  padding-top: clamp(1px, 2.22vw, 20px);
-  padding-top: 12px;
+  padding-top: clamp(12px, 3.2vw, 29px);
   text-align: center;
 }
 .product_text_box p:first-child {
@@ -809,98 +849,112 @@ header {
 @media screen and (max-width: 767px) {
   #product {
     width: 100%;
-    height: clamp( 1280px, 341.33vw, 3072px);
-    padding-top: clamp( 21px, 5.6vw, 50px);
+    height: clamp(1094px, 291.73vw, 2626px);
+    padding-top: clamp(18px, 4.8vw, 43px);
     background-image: url('../images/c3-bg-sp.webp');
-    background-size: 100vw 340.86vw;
+    background-size: clamp(375px, 100vw, 900px) clamp(1094px, 291.73vw, 2626px);
     background-repeat: no-repeat;
     background-position: top;
-    padding-bottom: clamp( 30px, 8vw, 72px);
+  }
+  .product__h2 {
+    margin: clamp(40px, 10.67vw, 96px) auto 0;
+    margin: 0 auto 0;
   }
   .product_title__img {
-    width: clamp( 190px, 50.67vw, 456px);
-    height: clamp( 45px, 12vw, 108px);
+    width: clamp(190px, 50.67vw, 456px);
+    height: clamp(45px, 12vw, 108px);
   }
   .product_cards {
     display: block;
     height: fit-content;
-    padding-bottom: clamp( 20px, 5.33vw, 48px);
+    padding-bottom: clamp(20px, 5.33vw, 48px);
   }
   .product_img {
     width: 100%;
-    height: clamp( 294px, 78.4vw, 706px);
-    padding-top: clamp( 42px, 11.2vw, 101px);
-    padding-left: clamp( 70px, 18.67vw, 168px);
+    height: clamp(234px, 62.4vw, 562px);
+    padding-top: clamp(7px, 1.87vw, 17px);
+    padding-left: clamp(70px, 18.67vw, 168px);
   }
   .producr_img__img {
-    width: clamp( px, vw, px)275px;
-    height: 248px;
+    width: clamp(275px, 73.33vw, 660px);
+    height: clamp(229px, 61.07vw, 550px);
   }
   .product_text {
     width: 100%;
     padding: 0;
+    padding-top: clamp(11px, 2.93vw, 26px);
+    padding-top: 0px;
   }
   .product_text__img {
-    width: 240px;
-    height: 51px;
+    width: clamp(240px, 64vw, 576px);
+    height: clamp(51px, 13.6vw, 122px);
   }
   .product_text__h3 {
     display: block;
     width: fit-content;
-
-    margin-left: 60px;
+    margin-left: clamp(60px, 16vw, 144px);
   }
 
   .product_text_box {
-    width: 325px;
+    width: clamp(325px, 86.67vw, 780px);
     height: fit-content;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     text-align: center;
   }
-
+  .product_text_box p:first-child {
+    padding-bottom: 0;
+  }
   .product_text_box p {
     display: block;
-    font-size: 14px;
+    font-size: 2.1rem;
     line-height: 1.2;
   }
 
   .product_text button {
-    width: 140px;
-    height: 35px;
-    margin: 20px auto 0;
-    font-size: 16px;
-    border-radius: 5px;
+    width: clamp(140px, 37.33vw, 336px);
+    height: clamp(35px, 9.33vw, 84px);
+    margin: clamp(20px, 5.33vw, 48px) auto 0;
+    margin: 3px auto 0;
+    font-size: 2.4rem;
+    border-radius: clamp(5px, 1.33vw, 12px);
   }
+  .instview {
+    padding-top: clamp(57px, 15.2vw, 137px);
+    padding-top: 47px;
+  }
+
   .inst_card:not(:first-child) {
     display: none;
   }
   .inst_card:first-child {
-    width: 250px;
+    width: clamp(250px, 66.67vw, 600px);
     margin: 0 auto;
   }
   .inst_card__img:first-child {
-    width: 250px;
-    height: 250px;
+    width: clamp(250px, 66.67vw, 600px);
+    height: clamp(250px, 66.67vw, 600px);
   }
   .instview__a {
-    font-size: 22px;
+    font-size: 3.3rem;
     line-height: 1.45;
-    margin-top: 14px;
-    margin-left: 84px;
+    margin-top: clamp(14px, 3.73vw, 34px);
+    margin-left: clamp(84px, 2.24vw, 202px);
   }
   .inatview__img {
-    width: 36px;
-    height: 25px;
+    width: clamp(36px, 9.6vw, 86px);
+    height: clamp(25px, 6.67vw, 60px);
   }
   .banner {
     width: 100%;
+    margin-top: clamp(49px, 13.07vw, 118px);
     margin-top: 40px;
-    margin-left: 36px;
+    margin-left: clamp(36px, 9.6vw, 86px);
   }
   .banner_btn {
-    width: 325px;
-    height: 72px;
+    width: clamp(325px, 86.67vw, 780px);
+    height: clamp(72px, 19.2vw, 173px);
   }
 }
 
@@ -934,7 +988,6 @@ footer {
   display: flex;
 }
 .footer_nav {
-  /* display: inline-block; */
   width: clamp(1px, 24.78vw, 223px);
   margin-left: clamp(1px, 8.33vw, 75px);
   font-size: 1rem;
@@ -1042,8 +1095,6 @@ footer {
   height: clamp(1px, 9.11vw, 82px);
   background-color: rgba(255, 255, 255, 0.42);
   border-radius: 50%;
-  /* bottom: clamp( 1px, 2.67vw, 24px); */
-  /* left: clamp( 1px, 25.56vw, 230px); */
 }
 .topmove_btn::before {
   position: relative;
@@ -1078,8 +1129,8 @@ footer {
 @media screen and (max-width: 767px) {
   footer {
     width: 100%;
-    height: 580px;
-    padding-top: 16px;
+    height: clamp(580px, 154.67vw, 1392px);
+    padding-top: clamp(16px, 4.27vw, 38px);
   }
 
   .footer_box {
@@ -1096,27 +1147,27 @@ footer {
     width: 50%;
   }
   .logo_circle {
-    width: 98px;
-    height: 100px;
+    width: clamp(98px, 26.13vw, 235px);
+    height: clamp(100px, 26.67vw, 240px);
     margin: 0 auto;
   }
   .logo_circle__img {
-    width: 100px;
-    height: 100px;
+    width: clamp(100px, 26.67vw, 240px);
+    height: clamp(100px, 26.67vw, 240px);
   }
 
   .sns {
-    margin-top: 8px;
+    margin-top: clamp(8px, 2.13vw, 19px);
     width: 100%;
-    font-size: 16px;
+    font-size: 2.4rem;
     line-height: 1.45;
     text-align: center;
-    padding-bottom: 56px;
+    padding-bottom: clamp(56px, 14.93vw, 134px);
   }
   .sns p {
     display: block;
     width: 100%;
-    padding-bottom: 8px;
+    padding-bottom: clamp(8px, 2.13vw, 19px);
   }
   .sns_img {
     display: inline-block;
@@ -1126,57 +1177,57 @@ footer {
   }
 
   .sns__img:first-child {
-    width: 34px;
-    height: 31px;
+    width: clamp(34px, 9.07vw, 82px);
+    height: clamp(31px, 8.27vw, 74px);
   }
   .sns__img:not(:first-child) {
-    width: 31px;
-    height: 31px;
+    width: clamp(31px, 8.27vw, 74px);
+    height: clamp(31px, 8.27vw, 74px);
   }
 
   .footer_nav {
     display: inline-block;
     width: fit-content;
-    margin-left: 27px;
-    font-size: 16px;
+    margin-left: clamp(27px, 7.2vw, 65px);
+    font-size: 2.4rem;
     line-height: 1.448;
   }
   .footer__nav__li:first-child {
     margin-top: 0;
   }
   .footer__nav__li:nth-child(2) {
-    margin-top: 8px;
+    margin-top: clamp(8px, 2.13vw, 19px);
   }
   .footer__nav__li:nth-child(3) {
-    margin-top: 8px;
+    margin-top: clamp(8px, 2.13vw, 19px);
   }
   .footer__nav__li:nth-child(4) {
-    margin-top: 8px;
+    margin-top: clamp(8px, 2.13vw, 19px);
   }
   .footer__nav__li:last-child {
-    margin-top: 8px;
+    margin-top: clamp(8px, 2.13vw, 19px);
   }
   .footer_info {
     display: inline-block;
     width: fit-content;
-    margin-left: 30px;
+    margin-left: clamp(30px, 8vw, 72px);
   }
   .footer_info_customer p {
     font-size: 14px;
     line-height: 1.45;
   }
   .footer_info_customer a {
-    font-size: 14px;
+    font-size: 2.1rem;
     line-height: 1.45;
     text-decoration: underline;
   }
   .footer_info_address p:first-child {
     margin-top: clamp(1px, 2vw, 18px);
-    font-size: 16px;
+    font-size: 2.4rem;
     line-height: 1.45;
   }
   .footer_info_address p:last-child {
-    font-size: 12px;
+    font-size: 1.8rem;
     line-height: 1.1;
   }
 
@@ -1187,37 +1238,37 @@ footer {
   }
   .footer_note__p {
     display: none;
-    margin-left: 54px;
-    width: 261px;
-    font-size: 6px;
+    margin-left: clamp(54px, 14.4vw, 130px);
+    width: clamp(261px, 69.6vw, 626px) px;
+    font-size: 0.9rem;
     line-height: 1.21;
   }
   .footer_note_text__img {
     display: block;
-    width: 250px;
-    height: 36px;
-    margin: 60px auto 0;
+    width: clamp(250px, 66.67vw, 600px);
+    height: clamp(36px, 9.6vw, 86px);
+    margin: clamp(60px, 16vw, 144px) auto 0;
   }
   .stop__img {
     position: relative;
-    top: 56px;
-    left: 30px;
-    width: 33px;
-    height: 45px;
+    top: clamp(56px, 14.93vw, 134px);
+    left: clamp(30px, 8vw, 72px);
+    width: clamp(33px, 8.8vw, 79px);
+    height: clamp(45px, 12vw, 108px);
   }
   .recycle__img {
     position: relative;
-    top: -75px;
-    left: 63px;
-    width: 33px;
-    height: 33px;
+    top: clamp(-180px, -20vw, -75px);
+    left: clamp(63px, 16.8vw, 151px);
+    width: clamp(33px, 8.8vw, 79px);
+    height: clamp(33px, 8.8vw, 79px);
   }
   .osake__img {
     position: relative;
-    top: -75px;
-    left: 61px;
-    width: 33px;
-    height: 33px;
+    top: clamp(-180px, -20vw, -75px);
+    left: clamp(61px, 16.27vw, 146px);
+    width: clamp(33px, 8.8vw, 79px);
+    height: clamp(33px, 8.8vw, 79px);
   }
 
   .topmove_btn__a {
