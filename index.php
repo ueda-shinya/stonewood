@@ -14,6 +14,7 @@
 
 <body>
   <!-- 年齢確認ポップアップ -->
+
   <!-- <div id="blindfold">
     <img src="images/blindfold.webp" alt="blindfold">
     <div id="popup">
@@ -24,7 +25,7 @@
   </div> -->
 
   <header>
-    <div class="header_logo">
+    <div class="header_logo for-pc">
       <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">
         <img src="images/header-logo.webp" alt="STONE&WOOD" class="header_logo__img" width="568" height="88">
       </a>
@@ -40,15 +41,26 @@
             rel="noopener noreferrer">INSTAGRAM</a></li>
       </ul>
     </div>
+    <div class="sp_menu_btn for-sp"><span class="sp_menu__span"></span></div>
   </header>
 
   <main>
 
     <section id="keyvisual">
-      <img src="images/keyvisual.webp" alt="" class="keyvisual__img" width="2880" height="1100">
+      <picture>
+        <!-- ブラウザ767px未満 -->
+        <source srcset="images/kv-sp.webp" media="(max-width: 767px)" type="image/webp">
+        <!-- ブラウザ幅767px以上 -->
+        <img src="images/keyvisual.webp" alt="" class="keyvisual__img" width="2880" height="1100">
+      </picture>
       <div class="kv_logo">
         <h1>
-          <img src="images/kv-logo.webp" alt="STONEandWOOD" class="kv_logo__img" width="1474" height="254">
+          <picture>
+            <!-- ブラウザ767px未満 -->
+            <source srcset="images/kv-text-sp.webp" media="(max-width: 767px)" type="image/webp">
+            <!-- ブラウザ幅767px以上 -->
+            <img src="images/kv-logo.webp" alt="STONEandWOOD" class="kv_logo__img" width="1474" height="254">
+          </picture>
         </h1>
       </div>
     </section>
@@ -58,8 +70,13 @@
       <div class="inner">
         <div class="contents1_title">
           <h2>
-            <img src="images/c1-title-pc.webp" alt="リッチなお取り寄せ父の日ギフト" class="contents1_title__img blurTrigger"
-              width="1612" height="480">
+            <picture>
+              <!-- ブラウザ767px未満 -->
+              <source srcset="images/c1-title-sp.webp" media="(max-width: 767px)" type="image/webp">
+              <!-- ブラウザ幅767px以上 -->
+              <img src="images/c1-title-pc.webp" alt="リッチなお取り寄せ父の日ギフト" class="contents1_title__img blurTrigger"
+                width="1612" height="480">
+            </picture>
           </h2>
         </div>
         <div class="contents1_cards">
@@ -74,7 +91,8 @@
             </a>
           </div>
           <div class="contents1_card c1_card_img">
-            <img src="images/stonewood6p.webp" alt="" class="contents1_card__img blurTrigger" width="594" height="691">
+            <img src="images/stonewood6p.webp" alt="beer 6pieces" class="contents1_card__img blurTrigger" width="594"
+              height="691">
           </div>
         </div>
       </div>
@@ -87,15 +105,16 @@
           <img src="images/about-title-pc.webp" alt="about" class="about_title__img" width="536" height="120">
         </h2>
         <div class="about_text">
-          <p>Stone & Wood Brewing Co.は、ニューサウスウェールズ州バイロンベイに拠点を置くオースト
-            ラリアのビール醸造所です。水・麦芽・ホップ・酵母、4 つの最高品質な原料を使用し、
-            「ゆっくり」と醸造することで完成したビールは天然成分を引き立たせます。2016年、オー
-            ストラリア国際ビール賞で「チャンピオンラージオーストラリア醸造所」を受賞し、そのパ
-            シフィックエールはワールドビアカップでイングリッシュスタイルのサマーエール部門で銀
+          <p>Stone & Wood Brewing Co.は、<br class="for-sp">ニューサウスウェールズ州バイロンベイに<br class="for-sp">拠点を置くオースト
+            ラリアの<br class="for-sp">ビール醸造所です。<span class="for-pc">水・麦芽・ホップ・酵母、4 つの最高品質な原料を使用し、
+              「ゆっくり」と醸造することで完成したビールは天然成分を引き立たせます。</span><br class="for-sp">2016年、オー
+            ストラリア国際ビール賞で<br class="for-sp">「チャンピオンラージオーストラリア醸造<br class="for-sp">所」を受賞し、そのパ
+            シフィックエールは<br class="for-sp">ワールドビアカップで<br class="for-sp">イングリッシュスタイルの<br class="for-sp">サマーエール部門で<br
+              class="for-sp">銀
             メダルを獲得しました。<br>
-            当社のスタッフ全員が、最高のビールを見極めるため味を追求し続け、醸造所から皆さまに
-            お届けしております。太平洋の海にインスピレーションを得た”パシフィックエール”を、ぜ
-            ひご賞味ください。
+            <span class="for-pc">当社のスタッフ全員が、最高のビールを見極めるため味を追求し続け、醸造所から皆さまに
+              お届けしております。太平洋の海にインスピレーションを得た”パシフィックエール”を、ぜ
+              ひご賞味ください。</span>
           </p>
         </div>
       </div>
@@ -128,9 +147,9 @@
               </p>
               <p>
                 ビーチサイドで波の音を聴きながら。<br>
-                サーフィンの後や、キャンプなどアウトドアに最適な<br>
+                サーフィンの後や、キャンプなどアウトドアに<br class="for-ap">最適な<br class="for-pc">
                 控えめに言っても世界一、<br>
-                人生で一度は味わっていただきたいオーストラリアン<br>
+                人生で一度は味わっていただきたい<br class="for-sp">オーストラリアン<br class="for-pc">
                 パシフィックエールです。
               </p>
             </div>
@@ -192,83 +211,89 @@
 
 
         <div class="footer_box">
-          <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">
-            <div class="logo_circle">
-              <img src="images/sw-circle-logo.webp" alt="STONEandWOOD" class="logo_circle__img" width="305"
-                height="296">
-            </div>
-          </a>
-          <div class="footer_nav">
-            <nav class="footer__nav">
-              <ul>
-                <li class="footer__nav__li">
-                  <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">公式トップページ</a>
-                </li>
-                <li class="footer__nav__li"><a href="https://www.stoneandwood.com.au/about-our-beer/" target="_blank"
-                    rel="noopener noreferrer">私たちについて</a></li>
-                <li class="footer__nav__li"> <a href="https://www.stoneandwood.com.au/breweries/" target="_blank"
-                    rel="noopener noreferrer">醸造所</a> </li>
-                <li class="footer__nav__li"> <a href="https://shop.www.stoneandwood.com.au/pages/delivery-returns"
-                    target="_blank" rel="noopener noreferrer">配送と返品</a> </li>
-                <li class="footer__nav__li"> <a href="https://www.stoneandwood.com.au/contacts/" target="_blank"
-                    rel="noopener noreferrer">お問い合わせ</a> </li>
-              </ul>
-            </nav>
+          <div>
+            <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">
+              <div class="logo_circle">
+                <img src="images/sw-circle-logo.webp" alt="STONEandWOOD" class="logo_circle__img" width="305"
+                  height="296">
+              </div>
+            </a>
           </div>
-          <div class="footer_info">
-            <div class="footer_info_customer">
-              <p>カスタマーサービス</p>
-              <a href="mailto:trevor@stoneandwood.com.au">trevor@stoneandwood.com.au</a>
+          <div class="sp_flex_direction">
+            <div class="pc_flex">
+              <div class="footer_nav">
+                <nav class="footer__nav">
+                  <ul>
+                    <li class="footer__nav__li">
+                      <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">公式トップページ</a>
+                    </li>
+                    <li class="footer__nav__li"><a href="https://www.stoneandwood.com.au/about-our-beer/"
+                        target="_blank" rel="noopener noreferrer">私たちについて</a></li>
+                    <li class="footer__nav__li"> <a href="https://www.stoneandwood.com.au/breweries/" target="_blank"
+                        rel="noopener noreferrer">醸造所</a> </li>
+                    <li class="footer__nav__li"> <a href="https://shop.www.stoneandwood.com.au/pages/delivery-returns"
+                        target="_blank" rel="noopener noreferrer">配送と返品</a> </li>
+                    <li class="footer__nav__li"> <a href="https://www.stoneandwood.com.au/contacts/" target="_blank"
+                        rel="noopener noreferrer">お問い合わせ</a> </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer_info">
+                <div class="footer_info_customer">
+                  <p>カスタマーサービス</p>
+                  <a href="mailto:trevor@stoneandwood.com.au">trevor@stoneandwood.com.au</a>
+                </div>
+                <div class="footer_info_address">
+                  <p>アドレス</p>
+                  <p> 100 Centennial Circuit<br> Byron Bay NSW 2481 </p>
+                </div>
+              </div>
             </div>
-            <div class="footer_info_address">
-              <p>アドレス</p>
-              <p> 100 Centennial Circuit<br> Byron Bay NSW 2481 </p>
+            <div class="sns">
+              <p>
+
+                公式アカウント
+              </p>
+              <div class="sns_img">
+                <a href="https://www.instagram.com/stoneandwood/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/instagram.webp" alt="" class="sns__img" width="88" height="88">
+                </a>
+              </div>
+
+              <div class="sns_img">
+                <a href="https://www.facebook.com/stoneandwoodbrewing" target="_blank" rel="noopener noreferrer">
+                  <img src="images/facebook.webp" alt="" class="sns__img" width="80" height="80">
+                </a>
+              </div>
+
+
+              <div class="sns_img">
+                <a href="https://twitter.com/stoneandwood" target="_blank" rel="noopener noreferrer">
+                  <img src="images/twitter.webp" alt="" class="sns__img" width="80" height="80">
+                </a>
+              </div>
+
+
+              <div class="sns_img">
+                <a href="https://www.youtube.com/watch?v=DRinpPpFnoc" target="_blank" rel="noopener noreferrer">
+                  <img src="images/youtube.webp" alt="" class="sns__img" width="80" height="80">
+                </a>
+              </div>
             </div>
           </div>
-          <div class="sns">
-            <p>
-
-              公式アカウント
-            </p>
-            <div class="sns_img">
-              <a href="https://www.instagram.com/stoneandwood/" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram.webp" alt="" class="sns__img" width="88" height="88">
-              </a>
-            </div>
-
-            <div class="sns_img">
-              <a href="https://www.facebook.com/stoneandwoodbrewing" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook.webp" alt="" class="sns__img" width="80" height="80">
-              </a>
-            </div>
-
-
-            <div class="sns_img">
-              <a href="https://twitter.com/stoneandwood" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.webp" alt="" class="sns__img" width="80" height="80">
-              </a>
-            </div>
-
-
-            <div class="sns_img">
-              <a href="https://www.youtube.com/watch?v=DRinpPpFnoc" target="_blank" rel="noopener noreferrer">
-                <img src="images/youtube.webp" alt="" class="sns__img" width="80" height="80">
-              </a>
-            </div>
-          </div>
-
         </div>
 
 
         <div class="footer_note">
-          <img src="images/stop.webp" alt="" class="footer_note_sopt__img" width="71" height="99">
-          <p class="footer_note__p">
+          <img src="images/stop.webp" alt="STOP!20歳未満飲酒" class="footer_note_sopt__img stop__img" width="71" height="99">
+          <p class="footer_note__p for-pc">
             ストップ！20歳未満飲酒・飲酒運転。妊娠中や授乳期の飲酒は、<br>
             胎児・乳児の発育に悪影響を与えるおそれがあります。<br>
             ほどよく、楽しく、いいお酒。のんだあとはリサイクル。
           </p>
-          <img src="images/recycle.webp" alt="" class="footer_note__img" width="71" height="71">
-          <img src="images/osake.webp" alt="" class="footer_note__img" width="71" height="71">
+          <img class="footer_note_text__img for-sp" src="images/footer-note-p-sp.webp" alt="ストップ！20歳未満飲酒・飲酒運転。妊娠中や授乳期の飲酒は、胎児・乳児の発育に悪影響を与えるおそれがあります。ほどよく、楽しく、いいお酒。のんだあとはリサイクル。" width="645" height="95">
+          <img src="images/recycle.webp" alt="のんだあとはリサイクル" class="footer_note__img recycle__img" width="71" height="71">
+          <img src="images/osake.webp" alt="お酒" class="footer_note__img osake__img" width="71" height="71">
         </div>
 
       </div>
@@ -299,6 +324,8 @@
   <script src="js/blindfold.js"></script>
   <!-- 年齢確認ポップアップ -->
   <script src="js/blurtrigger.js"></script>
+  <script src="js/menu.js"></script>
+
 </body>
 
 </html>
