@@ -262,8 +262,8 @@ header {
     position: fixed;
     top: 0;
     right: -100vw;
-    width: 246px;
-    height: 405px;
+    width: clamp( 246px, 65.6vw, 590px);
+    height: clamp( 405px, 108vw, 972px);
     transition: right 0.5s;
     overflow-y: auto;
     background-color: white;
@@ -275,33 +275,33 @@ header {
   }
   .nav_menu__ul {
     display: block;
-    padding-top: 10px;
+    padding-top: clamp( 10px, 2.67vw, 24px);
   }
   .nav_menu__li {
     display: block;
-    width: 219px;
-    height: 60px;
+    width: clamp( 219px, 58.4vw, 526px);
+    height: clamp( 60px, 16vw, 144px);
     font-family: 'Zen Old Mincho';
-    font-size: 28px;
+    font-size: 4.2rem;
     font-weight: 700;
     line-height: 1.45;
     background-color: #dfc9b4;
     color: black;
-    margin-left: 9px;
+    margin-left: clamp( 9px, 2.4vw, 22px);
     text-align: center;
-    padding-top: 10px;
+    padding-top: clamp( 10px, 2.67vw, 24px);
   }
   .nav_menu__li:nth-child(2) {
-    margin-top: 10px;
+    margin-top: clamp( 10px, 2.67vw, 24px);
   }
   .nav_menu__li:nth-child(3) {
-    margin-top: 16px;
+    margin-top: clamp( 16px, 4.27vw, 38px);
   }
   .nav_menu__li:nth-child(4) {
-    margin-top: 12px;
+    margin-top: clamp( 12px, 3.2vw, 29px);
   }
   .nav_menu__li:nth-child(5) {
-    margin-top: 22px;
+    margin-top: clamp( 22px, 5.87vw, 53px);
   }
 
 }
@@ -341,22 +341,22 @@ header {
 @media screen and (max-width: 767px) {
   #keyvisual {
     width: 100%;
-    height: 419px;
+    height: clamp( 419px, 111.73vw, 1006px);
   }
   .keyvisual__img {
     width: 100%;
-    height: 419px;
+    height: clamp( 419px, 111.73vw, 1006px);
     box-shadow: none;
   }
   .kv_logo {
     bottom: unset;
     right: unset;
-    top: 142px;
+    top: clamp( 142px, 37.87vw, 341px);
     left: 70px;
   }
   .kv_logo__img {
-    width: 247px;
-    height: 135px;
+    width: clamp( 247px, 65.87vw, 593px);
+    height: clamp( 135px, 36vw, 324px);
   }
 }
 
@@ -451,23 +451,22 @@ header {
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
   #contents1 {
-    height: 760px;
-    padding-top: 32px;
+    height: clamp( 760px, 202.67vw, 1824px);
+    padding-top: clamp( 32px, 8.53vw, 77px);
     background-image: url(../images/c1-bg-sp.webp);
   }
   .contents1_title {
-    width: 323px;
-    height: 164px;
-    margin-left: 25px;
+    width: clamp( 323px, 86.13vw, 775px);
+    height: clamp( 164px, 43.73vw, 394px);
+    margin-left: clamp( 25px, 6.67vw, 60px);
   }
   .contents1_title__img {
-    width: 323px;
-    height: 164px;
+    width: clamp( 323px, 86.13vw, 775px);
+    height: clamp( 164px, 43.73vw, 394px);
   }
   .contents1_cards {
     display: flex;
     flex-direction: column-reverse;
-    /* flex-direction: row-reverse; */
   }
   .contents1_card {
     width: 100%;
@@ -479,47 +478,47 @@ header {
     margin: 0;
   }
   .c1_card_img {
-    width: 246px;
-    height: 230px;
-    margin-top: 14px;
-    margin-left: 66px;
+    width: clamp( 246px, 65.6vw, 590px);
+    height: clamp( 230px, 61.33vw, 552px);
+    margin-top: clamp( 14px, 3.73vw, 34px);
+    margin-left: clamp( 66px, 17.6vw, 158px);
   }
   .contents1_card__img {
-    width: 246px;
-    height: 230px;
+    width: clamp( 246px, 65.6vw, 590px);
+    height: clamp( 230px, 61.33vw, 552px);
   }
   .c1_card_text h3 {
-    margin-top: 28px;
-    font-size: 16px;
+    margin-top: clamp( 28px, 7.47vw, 67px);
+    font-size: 2.4rem;
     line-height: 1;
     letter-spacing: 0em;
     text-align: center;
   }
   .c1_card_text h4 {
-    margin-top: 12px;
+    margin-top: clamp( 12px, 3.2vw, 29px);
     padding-top: 0;
-    font-size: 16px;
+    font-size: 2.4rem;
     font-weight: 400;
     line-height: 1;
   }
 
   .c1_card_text .note__p {
     padding-top: 0;
-    font-size: 14px;
+    font-size: 2..1rem;
     line-height: 1;
     letter-spacing: 0em;
   }
 
   .c1_card_text .price__p {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    font-size: 16px;
+    padding-top: clamp( 10px, 2.67vw, 24px);
+    padding-bottom: clamp( 30px, 8vw, 72px);
+    font-size: 2.4rem;
     line-height: 1;
   }
   .c1_card_text button {
-    width: 218px;
-    height: 42.86px;
-    font-size: 16px;
+    width: clamp( 218px, 58.13vw, 523px);
+    height: clamp( 42px, 11.2vw, 101px);
+    font-size: 2.4rem;
     line-height: 1;
   }
 }
@@ -544,7 +543,6 @@ header {
 }
 .about_text {
   display: block;
-  /* width: clamp( 1px, 100vw, 900px); */
   max-width: 900px;
   height: clamp(1px, 29.89vw, 269px);
   margin: 0 auto;
@@ -566,28 +564,28 @@ header {
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
   #about {
-    height: 431px;
-    padding-top: 18px;
+    height: clamp( 431px, 114.93vw, 1034px);
+    padding-top: clamp( 18px, 4.8vw, 43px);
   }
   .about_title__img {
     display: block;
-    width: 179px;
-    height: 40px;
+    width: clamp( 179px, 47.73vw, 430px);
+    height: clamp( 40px, 10.67vw, 96px);
     margin: 0 auto;
   }
   .about_text {
     display: block;
-    width: 325px;
-    height: 330px;
+    width: clamp( 325px, 86.67vw, 780px);
+    height: clamp( 330px, 88vw, 792px);
     margin: 0 auto;
-    padding-top: 72px;
+    padding-top: clamp( 72px, 19.2vw, 173px);
     background-image: url('../images/waku3-sp.webp');
     background-size: cover;
   }
   .about_text p {
     width: 100%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 2.1rem;
     font-weight: 400;
     line-height: 1.21;
   }
@@ -602,10 +600,9 @@ header {
 #product {
   width: 100%;
   height: clamp(1px, 134.44vw, 1210px);
-  height: clamp(1px, 147.78vw, 1330px);
   padding-top: clamp(1px, 6.78vw, 61px);
   background-image: url('../images/c3-bg-pc.webp');
-  background-size: clamp(1px, 160vw, 1440px) 92.36vw;
+  background-size: clamp(1px, 160vw, 1440px) clamp(1px, 134.44vw, 1210px);
   background-repeat: no-repeat;
   background-position: top;
   overflow: hidden;
@@ -630,8 +627,8 @@ header {
 }
 .product_img {
   width: fit-content;
-  padding-top: clamp(1px, 4.44vw, 40px);
-  padding-left: clamp(1px, 6.67vw, 60px);
+  padding-top: clamp(1px, 4vw, 36px);
+  padding-left: clamp(1px, 10.67vw, 96px);
 }
 .producr_img__img {
   width: clamp(1px, 37.56vw, 338px);
@@ -656,6 +653,7 @@ header {
   height: fit-content;
   margin: 0 auto;
   padding-top: clamp(1px, 2.22vw, 20px);
+  padding-top: 12px;
   text-align: center;
 }
 .product_text_box p:first-child {
@@ -811,31 +809,31 @@ header {
 @media screen and (max-width: 767px) {
   #product {
     width: 100%;
-    height: 1280px;
-    padding-top: 21px;
+    height: clamp( 1280px, 341.33vw, 3072px);
+    padding-top: clamp( 21px, 5.6vw, 50px);
     background-image: url('../images/c3-bg-sp.webp');
     background-size: 100vw 340.86vw;
     background-repeat: no-repeat;
     background-position: top;
-    padding-bottom: 30px;
+    padding-bottom: clamp( 30px, 8vw, 72px);
   }
   .product_title__img {
-    width: 190px;
-    height: 45px;
+    width: clamp( 190px, 50.67vw, 456px);
+    height: clamp( 45px, 12vw, 108px);
   }
   .product_cards {
     display: block;
     height: fit-content;
-    padding-bottom: 20px;
+    padding-bottom: clamp( 20px, 5.33vw, 48px);
   }
   .product_img {
     width: 100%;
-    height: 294px;
-    padding-top: 42px;
-    padding-left: 70px;
+    height: clamp( 294px, 78.4vw, 706px);
+    padding-top: clamp( 42px, 11.2vw, 101px);
+    padding-left: clamp( 70px, 18.67vw, 168px);
   }
   .producr_img__img {
-    width: 275px;
+    width: clamp( px, vw, px)275px;
     height: 248px;
   }
   .product_text {
