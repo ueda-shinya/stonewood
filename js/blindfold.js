@@ -1,14 +1,16 @@
 // 年齢確認ポップアップ
-window.onload = function() {
+window.onload = function () {
   var yesButton = document.getElementById('yes');
   var noButton = document.getElementById('no');
   var blindfold = document.getElementById('blindfold');
+  document.body.classList.add('is-fixed');
 
-  yesButton.onclick = function() {
-      blindfold.style.display = 'none';
+  yesButton.onclick = function () {
+    document.body.classList.remove('is-fixed');
+    blindfold.style.display = 'none';
   };
 
-  noButton.onclick = function() {
-      window.location.href = 'example.html';
+  noButton.onclick = function () {
+    window.location.href = 'example.html';
   };
 };

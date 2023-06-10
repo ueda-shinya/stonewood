@@ -67,6 +67,11 @@ html {
 .for-sp {
   display: none;
 }
+body.is-fixed {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
 .inner {
   max-width: var(--max-content-width);
   min-width: var(--min-content-width);
@@ -110,7 +115,7 @@ button:hover {
 
 #popup {
   width: clamp(1px, 71.56vw, 644px);
-  height: clamp(1px, 48.22vw, 434px) 434px;
+  height: clamp(1px, 48.22vw, 434px);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -154,7 +159,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   #popup {
     width: 80%;
-    height:clamp(360px, 96vw, 864px);
+    height: clamp(360px, 96vw, 864px);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -193,8 +198,6 @@ button:hover {
     color: black;
     font-weight: 900;
   }
-
-
 }
 
 /* *********************************************** */
@@ -607,6 +610,8 @@ header {
 @media screen and (max-width: 767px) {
   #about {
     height: clamp(431px, 114.93vw, 1034px);
+    height: clamp(500px, 133.33vw, 1200px);
+
     padding-top: clamp(18px, 4.8vw, 43px);
   }
   .about_title__img {
@@ -618,10 +623,10 @@ header {
   .about_text {
     display: block;
     width: clamp(325px, 86.67vw, 780px);
-    height: clamp(330px, 88vw, 792px);
+    height: clamp(410px, 109.33vw, 984px);
     margin: 0 auto;
-    padding-top: clamp(72px, 19.2vw, 173px);
-    background-image: url('../images/waku3-sp.webp');
+    padding-top: clamp(64px, 17.07vw, 154px);
+    background-image: url('../images/sp-flame.webp');
     background-size: cover;
   }
   .about_text p {
@@ -629,7 +634,7 @@ header {
     margin: 0 auto;
     font-size: 2.1rem;
     font-weight: 400;
-    line-height: 1.21;
+    line-height: 1.3;
   }
 }
 
@@ -651,7 +656,7 @@ header {
 .product__h2 {
   display: block;
   width: fit-content;
-  margin: clamp(1px, 6.22vm, 56px) auto 0;
+  margin: clamp(1px, 6.22vw, 56px) auto 0;
 }
 .product_title__img {
   width: clamp(292px, 32.44vw, 292px);
@@ -711,6 +716,10 @@ header {
   margin: clamp(1px, 2.56vw, 23px) auto 0;
 }
 
+.instview {
+  margin: 0 auto;
+}
+
 .instview__a {
   display: inline-flex;
   width: fit-content;
@@ -727,14 +736,18 @@ header {
 }
 .ins_cards {
   display: flex;
-  max-width: 900px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.slider-2 .slick-track {
+  width: fit-content;
 }
 
 .inst_card:not(:last-child) {
-  margin-right: clamp(1px, 2.67vw, 24px);
+  /* margin-right: clamp(1px, 2.67vw, 24px); */
 }
 .inst_card:last-child {
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 .inst_card {
   width: clamp(1px, 31.11vw, 280px);
@@ -752,7 +765,7 @@ header {
 
 .banner {
   width: 100%;
-  margin-top: clamp(1px, 8vw, 72px);
+  margin-top: clamp(1px, 13vw, 117px);
 }
 .banner__a {
   display: block;
@@ -774,12 +787,11 @@ header {
   left: clamp(1px, 16.11vw, 145px);
   width: clamp(1px, 14.67vw, 132px);
   height: clamp(1px, 13.67vw, 123px);
-
   animation-name: kira1;
   opacity: 0;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -799,12 +811,11 @@ header {
   left: clamp(1px, 85vw, 765px);
   width: clamp(1px, 13vw, 117px);
   height: clamp(1px, 12.78vw, 115px);
-
   animation-name: kira1;
   opacity: 0;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -819,9 +830,9 @@ header {
 
   animation-name: kira1;
   opacity: 0;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
-  animation-delay: 1.5s;
+  animation-delay: 3s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -830,15 +841,16 @@ header {
 .kirakira_4__img {
   position: absolute;
   top: clamp(1px, 15.22vw, 137px);
+  top: 51px;
   left: clamp(1px, 34.11vw, 307px);
+  left: 102px;
   width: clamp(1px, 6.44vw, 58px);
   height: clamp(1px, 5.11vw, 46px);
-
   animation-name: kira1;
   opacity: 0;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
-  animation-delay: 2s;
+  animation-delay: 4s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -925,22 +937,23 @@ header {
     padding-top: 47px;
   }
 
-  .inst_card:not(:first-child) {
-    display: none;
+  .ins_cards {
+    width: 100%;
   }
-  .inst_card:first-child {
-    width: clamp(250px, 66.67vw, 600px);
-    margin: 0 auto;
+  .slider-2 .slick-slide{
+    opacity: 0;
   }
-  .inst_card__img:first-child {
-    width: clamp(250px, 66.67vw, 600px);
-    height: clamp(250px, 66.67vw, 600px);
+  .slider-2 .slick-center {
+    opacity: 1;
   }
+
   .instview__a {
     font-size: 3.3rem;
     line-height: 1.45;
     margin-top: clamp(14px, 3.73vw, 34px);
     margin-left: clamp(84px, 2.24vw, 202px);
+    margin-left: 95px;
+
   }
   .inatview__img {
     width: clamp(36px, 9.6vw, 86px);
@@ -948,13 +961,28 @@ header {
   }
   .banner {
     width: 100%;
-    margin-top: clamp(49px, 13.07vw, 118px);
-    margin-top: 40px;
+    margin-top: clamp(40px, 10.67vw, 96px);
     margin-left: clamp(36px, 9.6vw, 86px);
   }
   .banner_btn {
     width: clamp(325px, 86.67vw, 780px);
     height: clamp(72px, 19.2vw, 173px);
+  }
+  .kirakira_1__img {
+    top: clamp(-31px, -3.47vw, -13px);
+    left: clamp(49px, 13.07vw, 118px);
+  }
+  .kirakira_2__img {
+    top: clamp(22px, 5.87vw, 53px);
+    left: clamp(267px, 71.2vw, 641px);
+  }
+  .kirakira_3__img {
+    top: clamp(4px, 1.07vw, 10px);
+    left: clamp(196px, 52.27vw, 470px);
+  }
+  .kirakira_4__img {
+    top: clamp(48px, 12.8vw, 115px);
+    left: clamp(111px, 29.6vw, 266px);
   }
 }
 
@@ -1301,29 +1329,48 @@ footer {
 }
 
 /*==================================================
-じわっ
+じわっ 1.0s
 ===================================*/
-
 .blur {
   animation-name: blurAnime;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
 @keyframes blurAnime {
   from {
     filter: blur(10px);
     transform: scale(1.02);
     opacity: 0;
   }
-
   to {
     filter: blur(0);
     transform: scale(1);
     opacity: 1;
   }
 }
-
 .blurTrigger {
+  opacity: 0;
+}
+/*==================================================
+じわっ 1.5s
+===================================*/
+.blur15 {
+  animation-name: blurAnime15;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes blurAnime15 {
+  from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.blurTrigger15 {
   opacity: 0;
 }
