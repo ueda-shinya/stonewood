@@ -23,19 +23,19 @@
 <body>
   <!-- 年齢確認ポップアップ -->
 
-  <div id="blindfold">
+  <!-- <div id="blindfold">
     <img src="images/blindfold.webp" alt="blindfold">
     <div id="popup">
       <h2>このサイトはお酒に関する<br class="for-sp">内容を含んでいます。<br>あなたは２０歳以上ですか？</h2>
       <button id="yes">はい</button>
       <button id="no">いいえ</button>
     </div>
-  </div>
+  </div> -->
 
   <header>
     <div class="header_logo for-pc">
       <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">
-        <img src="images/header-logo.webp" alt="STONE&WOOD" class="header_logo__img" width="568" height="88">
+        <img src="images/header-logo.webp" alt="STONE&WOOD" class="header_logo__img" width="390" height="79">
       </a>
     </div>
     <div class="nav_menu">
@@ -135,14 +135,8 @@
           <img src="images/about-title-pc.webp" alt="about" class="about_title__img" width="536" height="120">
         </h2>
         <div class="about_text">
-          <p>Stone & Wood Brewing Co.は、ニューサウ<br class="for-sp">スウェールズ州バイロンベイに拠点を置く<br class="for-sp">
-            オーストラリアのビール醸造所です。<br class="for-sp">水・麦芽・ホップ・酵母、4 つの最高品質<br class="for-sp">
-            な原料を使用し、「ゆっくり」と醸造する<br class="for-sp">ことで完成したビールは天然成分を引き立<br class="for-sp">たせます。
-            2016年、オーストラリア国際<br class="for-sp">ビール賞で「チャンピオンラージオースト<br class="for-sp">ラリア醸造所」を受賞し、
-            そのパシフィッ<br class="for-sp">クエールはワールドビアカップでイング<br class="for-sp">リッシュスタイルの
-            サマーエール部門で銀<br class="for-sp">メダルを獲得しました。<br>
-            当社のスタッフ全員が、最高のビールを見<br class="for-sp">極めるため味を追求し続け、醸造所から皆<br class="for-sp">さまにお届けしております。<br class="for-sp">
-            太平洋の海にインスピレーションを得<br class="for-sp">た”パシフィックエール”を、ぜひご賞味く<br class="for-sp">ださい。
+          <p>Stone & Wood Brewing Co.は、ニューサウ<br class="for-sp">スウェールズ州バイロンベイに拠点を置く<br class="for-sp">オーストラリアのビール醸造所です。<br class="for-sp">水・麦芽・ホップ・酵母、4つの最高品質<br class="for-sp">な原料を使用し、「ゆっくり」と醸造する<br class="for-sp">ことで完成したビールは天然成分を引き立<br class="for-sp">たせます。2016年、オーストラリア国際<br class="for-sp">ビール賞で「チャンピオンラージオースト<br class="for-sp">ラリア醸造所」を受賞し、そのパシフィッ<br class="for-sp">クエールはワールドビアカップでイング<br class="for-sp">リッシュスタイルのサマーエール部門で銀<br class="for-sp">メダルを獲得しました。<br>
+            当社のスタッフ全員が、最高のビールを見<br class="for-sp">極めるため味を追求し続け、醸造所から皆<br class="for-sp">さまにお届けしております。<br class="for-sp">太平洋の海にインスピレーションを得<br class="for-sp">た”パシフィックエール”を、ぜひご賞味く<br class="for-sp">ださい。
           </p>
         </div>
       </div>
@@ -174,10 +168,8 @@
               </p>
               <p>
                 ビーチサイドで波の音を聴きながら。<br>
-                サーフィンの後や、キャンプなどアウトドアに最適<br class="for-sp">な<br class="for-pc">
-                控えめに言っても世界一、<br>
-                人生で一度は味わっていただきたいオーストラリアン<br>
-                パシフィックエールです。
+                サーフィンの後や、キャンプなどアウトドアに最適<br class="for-sp">な<br class="for-pc">控えめに言っても世界一、<br>
+                人生で一度は味わっていただきたいオーストラリア<br class="for-sp">ン<br class="for-pc">パシフィックエールです。
               </p>
             </div>
 
@@ -236,14 +228,14 @@
         <div class="footer_box">
           <div>
             <a href="https://www.stoneandwood.com.au/" target="_blank" rel="noopener noreferrer">
-              <div class="logo_circle">
+              <div class="logo_circle footer_crad">
                 <img src="images/sw-circle-logo.webp" alt="STONEandWOOD" class="logo_circle__img" width="305" height="296">
               </div>
             </a>
           </div>
           <div class="sp_flex_direction">
             <div class="pc_flex">
-              <div class="footer_nav">
+              <div class="footer_nav footer_crad">
                 <nav class="footer__nav">
                   <ul>
                     <li class="footer__nav__li">
@@ -256,7 +248,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="footer_info">
+              <div class="footer_info footer_crad">
                 <div class="footer_info_customer">
                   <p>カスタマーサービス</p>
                   <a href="mailto:trevor@stoneandwood.com.au">trevor@stoneandwood.com.au</a>
@@ -267,14 +259,14 @@
                 </div>
               </div>
             </div>
-            <div class="sns">
+            <div class="sns footer_crad">
               <p>
 
                 公式アカウント
               </p>
               <div class="sns_img">
                 <a href="https://www.instagram.com/stoneandwood/" target="_blank" rel="noopener noreferrer">
-                  <img src="images/instagram.webp" alt="" class="sns__img" width="88" height="88">
+                  <img src="images/instagram.webp" alt="" class="sns__img" width="512" height="512">
                 </a>
               </div>
 
@@ -315,7 +307,7 @@
         </div>
 
       </div>
-      <a class="topmove_btn__a" href="#">
+      <a class="topmove_btn__a" href="#"  style="display: none;">
         <div class="topmove_btn"></div>
       </a>
 
@@ -349,6 +341,7 @@
   <!-- ドロワーメニュー -->
   <script src="js/menu.js"></script>
 
+  <script src="js/topmovebtn.js"></script>
 </body>
 
 </html>

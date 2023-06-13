@@ -7,6 +7,7 @@
 .slick-wrap_kv {
   position: relative;
 }
+
 .slider-1 {
   width: 100%;
   height: 100%;
@@ -15,6 +16,8 @@
 .slider-1 .slick-slide {
   position: relative;
   overflow: hidden;
+
+  height: clamp(1px, 38.2vw, 550px);
 }
 .slider-1 .slick-slide img {
   display: block;
@@ -102,7 +105,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.25);;
+  background-color: rgba(0, 0, 0, 0.25);
   cursor: pointer;
   border: none;
   outline: none;
@@ -158,4 +161,79 @@
 }
 .dots-2 .slick-dots .slick-active button {
   background: #0a467d;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+  .slider-2 .slick-arrow {
+    /* width: 40px; */
+    width: 10.67vw;
+    /* height: 40px; */
+    height: 10.67vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    transform: translateY(-50%);
+  }
+  .slider-2 .slick-arrow::before {
+    content: '';
+    display: block;
+    /* width: 13px; */
+    width: 3.47vw;
+    /* height: 13px; */
+    height: 3.47vw;
+    border: 1px solid white;
+    /* border-width: 4px 4px 0 0; */
+    border-width: 1.07vw 1.07vw 0 0;
+    position: absolute;
+    /* top: 14px; */
+    top: 3.73vw;
+    transform: rotate(45deg);
+  }
+  .slider-2 .slick-next {
+    /* right: 30px; */
+    right: 8vw;
+  }
+  .slider-2 .slick-prev {
+    /* left: 30px; */
+    left: 8vw;
+  }
+  .slider-2 .slick-next::before {
+    /* left: 10px; */
+    left: 2.67vw;
+  }
+  .slider-2 .slick-prev::before {
+    /* border-width: 0 0 4px 4px; */
+    border-width: 0 0 1.07vw 1.07vw;
+    /* right: 10px; */
+    right: 2.67vw;
+  }
+  .dots-2 .slick-dots {
+    text-align: center;
+  }
+  .dots-2 .slick-dots li {
+    display: inline-block;
+  }
+  .dots-2 .slick-dots button {
+    display: block;
+    /* width: 10px; */
+    width: 2.67vw;
+    /* height: 10px; */
+    height: 2.67vw;
+    /* margin: 6px; */
+    margin: 1.6vw;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #bcbcbc;
+    border-radius: 50%;
+  }
 }
